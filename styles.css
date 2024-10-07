@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  /* Styles for notes */
+.note {
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .delete-btn, .edit-btn {
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #f44336;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .edit-btn:hover {
+    background-color: #4caf50;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  /* Fade-out animation */
+  .note.fade-out {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide up while fading out */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #ffb800;
+  }
+  
+  #notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .note {
+    background-color: #fffcb1;
+    padding: 15px;
+    width: 100%;
+    max-width: 180px;
+    min-height: 150px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .note p {
+    word-wrap: break-word;
+    flex-grow: 1;
+  }
+  
+  .delete-btn,
+  .edit-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    right: 30px;
+  }
+  
+  .delete-btn {
+    right: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #notes-container {
+      flex-direction: column;
+    }
+  }
+
+
+  /* Styles for notes */
+.note {
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .delete-btn, .edit-btn {
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #f44336;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .edit-btn:hover {
+    background-color: #4caf50;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  /* Fade-out animation */
+  .note.fade-out {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide up while fading out */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  
